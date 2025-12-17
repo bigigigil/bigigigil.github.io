@@ -1,322 +1,145 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <!-- Metadatos -->
-  <meta charset="utf-8">
-  <meta name="author" content="Roxanna Abigail">
-  <meta name="description" content="Portafolio de desarrollo web de Roxanna Abigail">
-  <meta name="keywords" content="HTML, CSS, JavaScript, React">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Titulo -->
-  <title>Roxanna Abigail | Artista Digital</title>
-  <!-- Favicon -->
-  <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
-  <!-- Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <!-- Iconos de Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <!-- CSS -->
-  <link href="style.css" rel="stylesheet">
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
-    rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <meta name="author" content="Roxanna Abigail">
+    <meta name="description" content="Portafolio de Arte Digital y Animación - Roxanna Abigail">
+    <meta name="keywords" content="Arte Digital, Animación 2D, Modelado 3D, Character Design, Portafolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Roxanna Abigail | Artista Digital</title>
+    <link rel="icon" type="image/x-icon" href="imagenes/icono.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Rubik+Dirt&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bevan&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
 </head>
-
 <body>
-  <!-- Barra de navegacion -->
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler"
-        aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbar-toggler">
-        <a class="navbar-brand" href="#">
-          <img src="imagenes/icono.png" width="50" alt="Logo de la página web">
-        </a>
-        <ul class="navbar-nav d-flex justify-content-center align-items-center">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#sobre-mi">Sobre mí</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="2D.html">2D</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="3D.html">3D</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Seccion Hero -->
-  <section class="hero align-items-stretch">
-    <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
-    <!-- <img class="hero-imagen-desarrollador rounded-circle" src="imagenes/Roxanna.png" alt="Dibujo de Roxanna">-->
-      <h1>Hola, soy Roxanna Abigail</h1>
-      <!--<h2>Desarrollo sitios web y escribo artículos sobre programación.</h2>-->
-
-      <!--Animación con JavaScript-->
-      <h2 class="text-primary mb-4" id="typewriter"></h2>
-    </div>
-   <!-- <div class="hero-inferior">
-      <img class="hero-inferior-imagen img-fluid" src="imagenes/hero-inferior.svg"
-        alt="Monitor, laptop y logos de HTML, CSS, JavaScript y React.">
-    </div> -->
-  </section>
-
-  <!-- Sobre mi -->
-  <section id="sobre-mi" class="sobre-mi seccion-oscura">
-    <div class="contenedor">
-      <h2 class="seccion-titulo">Conoceme</h2>
-      <p class="seccion-texto">Soy artista digital, tengo conocimientos e interés en la programación y diseño web, me
-        quiero especializar en el área de animación, trabajo en proyectos multimedia, por lo que tengo conocimiento en
-        diversos campos del arte y tecnología. Soy una persona con alta atención al detalle y organizada.
-      </p>
-    </div>
-  </section>
-
-  <!-- Experiencia -->
-  <section class="experiencia seccion-clara">
-    <div class="container text-center">
-      <div class="row">
-        <!-- Desarrollo Web -->
-        <div class="columna col-12 col-md-4">
-          <i class="bi bi-laptop"></i>
-          <p class="experiencia-titulo">Desarrollo Web</p>
-          <p>Sitios web con el objetivo de ser faciles de entender para el usuario</p>
-          <div class="badges-contenedor">
-            <span class="badge">HTML</span>
-            <span class="badge">CSS</span>
-            <span class="badge">JavaScript</span>
-            <span class="badge">GitHub</span>
-          </div>
-        </div>
-        <!-- Articulos -->
-        <div class="columna col-12 col-md-4">
-          <i class="bi bi-laptop"></i>
-          <p class="experiencia-titulo">Arte Digital</p>
-          <p>Hago dibujos, animaciónes 2D, modelos 3D a partir de planos y edito videos. </p>
-          <div class="badges-contenedor">
-            <span class="badge">Dibujar</span>
-            <span class="badge">Animar</span>
-            <span class="badge">Editar</span>
-          </div>
-        </div>
-        <!-- Estudiante -->
-        <div class="columna col-12 col-md-4">
-          <i class="bi bi-laptop"></i>
-          <p class="experiencia-titulo">Estudiante</p>
-          <p>Sexto semestre de carrera. </p>
-          <div class="badges-contenedor">
-            <span class="badge">Desarrollo Web</span>
-            <span class="badge">C++</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Proyectos -->
-  <section id="proyectos" class="proyectos-recientes seccion-clara d-flex flex-column">
-    <h2 class="seccion-titulo texto-negro">Mis proyectos recientes</h2>
-    <h3 class="seccion-descripcion">Estos son algunos proyectos que he creado recientemente...</h3>
-    <!-- Galeria de Proyectos -->
-    <div class="container text-center proyectos-contenedor">
-      <div class="row">
-        <!-- Proyecto 1 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="proyecto">
-            <img src="imagenes/Google.jpg" alt="Google">
-            <div class="overlay">
-              <p>Interfaz de Google</p>
-              <p1>Se emula la página inicial de Google</p1>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/bigigigil/Google" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
+    <nav class="navbar navbar-expand-md navbar-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbar-toggler">
+                <a class="navbar-brand" href="index.html">
+                    <img src="imagenes/icono.png" width="50" alt="Logo">
                 </a>
-                <a href="https://google-one-ivory.vercel.app/ " target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
-              </div>
+                <ul class="navbar-nav d-flex justify-content-center align-items-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="2D.html">Arte 2D</a></li>
+                    <li class="nav-item"><a class="nav-link" href="3D.html">Modelado 3D</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
             </div>
-          </div>
         </div>
-        <!-- Proyecto 2
-         
-         <div class="col-12 col-md-6 col-lg-4">
-          <div class="proyecto">
-            <img src="imagenes/forest.jpg" alt="Forest">
-            <div class="overlay">
-              <p>Forest</p>
-              <p2>Página web relajante</p2>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/bigigigil/Forest" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="https://forest-bay.vercel.app/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
-              </div>
+    </nav>
+
+    <section class="hero align-items-stretch seccion-clara">
+        <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+            <img class="hero-imagen-desarrollador rounded-circle shadow" src="imagenes/Roxanna.png" alt="Roxanna Artista">
+            <h1>Roxanna Abigail ദ്ദി◝ ⩊ ◜.ᐟ</h1>
+            <h2 class="text-primary mb-4" id="typewriter"></h2>
+            <p class="seccion-descripcion text-center px-4">Creo mundos y personajes a través de la ilustración digital, el modelado 3D y la narrativa animada.</p>
+        </div>
+    </section>
+
+    <section class="experiencia seccion-oscura">
+        <div class="container text-center">
+            <div class="row">
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-palette-fill"></i><br><br>
+                    <h5 class="experiencia-titulo">Ilustración & 2D</h5>
+                    <p>Diseño de personajes (Character Design), storyboarding y fondos con narrativa visual fuerte.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-info">Krita</span>
+                    </div>
+                </div>
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-film"></i><br><br>
+                    <h5 class="experiencia-titulo">Animación</h5>
+                    <p>Creación de cortos animados, desde el concepto inicial hasta la post-producción final.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-info">OpenToonz</span>
+                    </div>
+                </div>
+                <div class="columna col-12 col-md-4">
+                    <i class="bi bi-box-seam"></i><br><br>
+                    <h5 class="experiencia-titulo">Modelado 3D</h5>
+                    <p>Escultura digital y modelado de objetos y escenarios para entornos 3D.</p>
+                    <div class="badges-contenedor">
+                        <span class="badge text-bg-info">Blender</span>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>-->
-       
-        <!-- Proyecto 3 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="proyecto">
-            <img src="imagenes/Proyectos 2025/Render personaje.png" alt="Proyecto 1">
-            <div class="overlay">
-              <p>Creación de Personaje 3D</p>
-              <p1>Desde el diseño al modelado</p1>
+        </div>
+    </section>
 
-              <div class="iconos-contenedor">
-                <a href="https://drive.google.com/file/d/1-E6Yz7pngxTih6n-uzFCatrzmQhiOQvO/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
-              
-              </div>
+    <section class="proyectos-recientes seccion-clara d-flex flex-column">
+        <h2 class="seccion-titulo texto-negro">Proyectos Más Recientes</h2>
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4">
+                    <h3 class="texto-negro">Un Cabrito Muy Norteado</h3>
+                    <p>Proceso de Character Design y Headturns.</p>
+                    <div class="ratio ratio-16x9 shadow rounded overflow-hidden">
+                        <video controls autoplay loop muted>
+                            <source src="imagenes/PROYECTOS/Un Cabrito Muy Norteado/Character Design/HeadTurn.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div id="carruselArte" class="carousel slide shadow rounded overflow-hidden" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imagenes/PROYECTOS/Un Cabrito Muy Norteado/Character Design/milly_turnAround.png" class="d-block w-100 object-fit-cover" alt="Milly">
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="ratio ratio-16x9">
+                                    <img src="imagenes/PROYECTOS/Un Cabrito Muy Norteado/Character Design/cornelio_turnAround.png" class="d-block w-100 object-fit-cover" alt="Cornelio">
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselArte" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselArte" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-        <!-- Proyecto 4 -->
-        <div class="col-12 col-md-6 col-lg-4">
-          <div class="proyecto">
-            <img src="imagenes/Proyectos 2025/Exploración de la temática.png" alt="Proyecto 1">
-            <div class="overlay">
-              <p>Biblia de Animación</p>
-              <p1>Todo lo necesario para la produccion de una serie animada</p1>
+        <a href="2D.html" class="btn btn-outline-primary align-self-center mt-3">Ver Galería Completa</a>
+    </section>
 
-              <div class="iconos-contenedor">
-                <a href="https://drive.google.com/file/d/1kUN0keFikpfFh0qmWoghzjqhGavVG1Ay/view?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
-               
-              </div>
-            </div>
-          </div>
+    <footer id="contacto" class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo Blanco">
+        <p class="footer-texto text-center">.</p>
+        <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
+            <a href="https://instagram.com/chogirox" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="mailto:rati.bigigigil@gmail.com"><i class="bi bi-envelope"></i></a>
         </div>
-        <!-- Proyecto 5 
-         
-           <div class="col-12 col-md-6 col-lg-4">
-          <div class="proyecto">
-            <img src="imagenes/proyecto5.png" alt="Proyecto 1">
-            <div class="overlay">
-              <p>Proyecto 5</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-        -->
-     
-        <!-- Proyecto 6 
-         
-         <div class="col-12 col-md-6 col-lg-4">
-          <div class="proyecto">
-            <img src="imagenes/proyecto6.png" alt="Proyecto 1">
-            <div class="overlay">
-              <p>Proyecto 6</p>
-              <div class="iconos-contenedor">
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-github"></i>
-                </a>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <i class="bi bi-laptop"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-        
-        -->
-       
-    <a href="https://github.com/bigigigil" target="_blank" rel="noopener noreferrer">
-      <button type="button" class="btn btn-info">
-        Ver más proyectos
-        <i class="bi bi-arrow-right-circle-fill"></i>
-      </button>
-    </a>
-  </section>
+        <div class="derechos-de-autor">Creado por Roxanna Abigail (2025) &#169;</div>
+    </footer>
 
-  <!-- Contacto -->
-  <section id="contacto" class="contacto seccion-oscura">
-    <div class="container">
-      <div class="container text-center rectangulo d-flex justify-content-evenly">
-        <div class="row">
-          <div class="col-12 col-md-4 seccion-titulo">
-            ¡Hablemos!
-          </div>
-          <div class="col-12 col-md-4 descripcion">
-            Contáctame y trabajemos en tu proyecto soñado y lo haré realidad.
-          </div>
-          <div class="col-12 col-md-4">
-            <a href="mailto:rati.bigigigil@gmail.com">
-              <button type="button">
-                Contacto
-                <i class="bi bi-envelope-check-fill"></i>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Pie de pagina (footer) -->
-  <footer class="seccion-oscura d-flex flex-column align-items-center justify-content-center">
-    <img class="footer-logo" src="imagenes/icono-blanco.svg" alt="Logo del portafolio">
-    
-    <div class="iconos-redes-sociales d-flex flex-wrap align-items-center justify-content-center">
-      <!--<a href="#" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-twitter"></i>
-        </a>-->
-      <a href="https://github.com/bigigigil" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-github"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/bigigigil/" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-linkedin"></i>
-      </a>
-      <!--<a href="#" target="_blank" rel="noopener noreferrer">
-          <i class="bi bi-instagram"></i>
-        </a>-->
-      <a href="mailto:rati.bigigigil@gmail.com" target="_blank" rel="noopener noreferrer">
-        <i class="bi bi-envelope"></i>
-      </a>
-    </div>
-    <div class="derechos-de-autor">Creado por Roxanna Abigail</div>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
-    crossorigin="anonymous"></script>
-
-  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-  <script src="main.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="main.js"></script>
 </body>
-
 </html>

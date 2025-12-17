@@ -1,440 +1,161 @@
-/* Barra de navegacion */
+/* --- Variables para consistencia de color --- */
+:root {
+  --azul-profundo: #171d51;
+  --azul-medio: #323d73;
+  --azul-claro: #62bcd8;
+  --amarillo-pastel: #fff786;
+  --blanco: #ffffff;
+}
 
+/* Barra de navegacion */
 .navbar {
-  padding: 2rem;
-  background-color: #323d73;
+  padding: 1.5rem;
+  background-color: var(--azul-medio);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2); /* Sombra para dar profundidad */
 }
 
 .nav-item a {
-  color: #fff786;
+  color: var(--amarillo-pastel);
+  font-weight: 500;
+  transition: all 0.3s ease;
 }
 
-.navbar-collapse {
-  align-items: center;
-  justify-content: space-between;
+.nav-item a:hover {
+  color: var(--blanco);
+  text-shadow: 0 0 8px var(--amarillo-pastel); /* Resplandor artístico */
 }
 
 /* Estilos generales */
-
 section {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding: 60px 20px;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Bevan", serif;
-  color: #171d51;
+  color: var(--azul-profundo);
+  text-shadow: 2px 2px 0px var(--amarillo-pastel); /* Detalle de sombra sólida */
+}
+
+h3,h5 {
+
+  font-family: "Bevan", serif;
 }
 
 .seccion-oscura {
-  color: #ffffff;
-  background-color: #171d51;
+  color: var(--blanco);
+  background: linear-gradient(180deg, #171d51 0%, #1c2563 100%); /* Degradado sutil */
 }
 
 .seccion-clara {
   color: black;
-  background-color: #62bcd8;
+  background-color: var(--azul-claro);
+  background-image: radial-gradient(circle at 10% 20%, rgba(255,247,134,0.1) 0%, transparent 40%); /* Mancha de luz pastel */
 }
 
 .seccion-titulo {
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding: 15px 0;
   font-family: "Bevan", serif;
-  color: #fff786;
-}
-
-.seccion-descripcion {
-  font-size: 1.2rem;
-  color: #171d51;
-}
-
-.seccion-texto {
-  font-size: 1.5rem;
-  font-family: "Itim", cursive;
-}
-
-.btn-info {
-  font-size: 1.1rem;
-  margin: 20px;
-  background-color: #171d51;
-  color: #fff786;
-}
-
-.btn-info:hover {
-  font-size: 1.1rem;
-  margin: 20px;
-  background-color: #fff786;
-  color: #171d51;
-}
-
-.texto-negro {
-  color: black;
-}
-
-.texto-blanco {
-  color: white;
-}
-
-/* Seccion Hero */
-
-.hero {
-  background-color: #62bcd8;
-  min-height: 450px;
+  color: var(--amarillo-pastel);
   text-align: center;
 }
 
-.hero-principal {
-  padding: 3rem;
-}
+/* --- Mejoras detalladas en el Carrusel y Flechas --- */
 
-.hero-imagen-desarrollador {
-  width: 200px;
-  height: 200px;
-  margin: 20px;
-  border-style:solid;
-  border-width: 10px;
-  border-color: #fff786;
-}
-
-.hero-principal h2 {
-  font-size: 1.5rem;
-  color: #173351;
-}
-
-/* Sobre mi */
-
-.sobre-mi {
-  height: 500px;
-  padding: 10px;
-}
-
-.sobre-mi .contenedor {
-  max-width: 600px;
-  text-align: center;
-}
-
-/* Experiencia */
-
-.experiencia {
-  padding: 40px 40px 60px 40px;
-}
-
-.experiencia .columna {
-  padding: 20px;
-  border: 2px solid #62bcd8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  transition: all 0.2s ease-in;
-  font-family: "Itim", cursive;
-  font-size: 1.2rem;
-  border-radius: 15%;
-}
-
-.experiencia .columna:hover {
-  color: #fff786;
-  background-color: #173351;
-  border-radius: 15%;
-}
-
-.experiencia i {
-  font-size: 2.5rem;
-  color: #171d51;
-  background-color: #fff786;
-
-  padding: 8px 19px;
+/* Fondo de las flechas más colorido */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: var(--azul-profundo);
+  border: 2px solid var(--amarillo-pastel);
   border-radius: 50%;
-}
-
-.experiencia-titulo {
-  font-size: 25px;
-  font-weight: bold;
-  margin: 10px 0;
-}
-
-.badges-contenedor {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0;
-  font-family: "Itim", cursive;
-  color: #171d51;
-}
-
-.badge {
-  margin: 5px;
-  background-color: #fff786;
-  color: #171d51;
-}
-
-/* Proyectos */
-
-.proyectos-recientes {
-  padding: 40px;
-}
-
-.proyectos-recientes h2 {
-  color: #fff786;
-}
-
-.proyectos-recientes h3 {
-  color: #171d51;
-  font-size: 1.3rem;
-  font-family: "Itim", cursive;
-}
-
-.proyectos-recientes img {
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  border-radius: 10%;
-  display: block;
-  transition: all 0.2s ease;
-}
-
-.proyectos-contenedor {
-  padding-top: 60px;
-  margin-bottom: 40px;
-}
-
-.overlay {
-  transition: all 0.2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.overlay p {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 0;
-  color: #171d51;
-  font-family: "Itim", cursive;
-}
-
-.proyecto {
-  position: relative;
-}
-
-.proyecto:hover img {
-  opacity: 0.2;
-}
-
-.proyecto:hover .overlay {
-  opacity: 1;
-}
-
-.overlay .iconos-contenedor {
-  display: flex;
-}
-
-.overlay i {
-  color: #171d51;
-  font-size: 60px;
-  margin: 10px;
-}
-
-/* Testimonios */
-
-.testimonios {
-  padding: 40px 40px 80px 40px;
-}
-
-.testimonios .carousel {
-  max-width: 90%;
-}
-
-.carousel-item {
-  height: 500px;
-}
-
-.carousel-item .container {
-  width: 100%;
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.testimonio-imagen {
-  height: 150px;
-  width: 150px;
-  margin: 10px 10px 20px 10px;
-}
-
-.testimonio-texto {
-  max-width: 70%;
-  font-size: 20px;
-  text-align: center;
-  font-family: "Share Tech Mono", monospace;
-}
-
-.testimonio-info {
-  font-weight: bold;
-  text-align: center;
-}
-
-.testimonio-info p {
-  margin-bottom: 0;
-}
-
-.testimonio-footer .cliente {
-  font-size: 1.2rem;
-}
-
-.testimonio-info .cargo {
-  font-size: 0.9rem;
-  color: #fff786;
-}
-
-/* Contacto */
-
-.contacto .container {
-  max-width: 1100px;
-  min-height: 200px;
   padding: 20px;
+  background-size: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
 }
 
-.contacto .rectangulo {
-  margin-top: -5rem;
-  background-color: #fff786;
-  border-radius: 10px;
-  box-shadow: 0px 1px 4px 1px #173351;
+.carousel-control-prev:hover .carousel-control-prev-icon,
+.carousel-control-next:hover .carousel-control-next-icon {
+  background-color: var(--amarillo-pastel);
+  border-color: var(--azul-profundo);
+  filter: invert(0); /* Ajuste de color al hover */
+  transform: scale(1.1);
 }
 
-.contacto .row {
-  width: 100%;
-  display: flex;
-  align-items: center;
-}
+/* Ajuste de color de la flecha interna (SVG) */
+.carousel-control-next-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff786'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
+.carousel-control-prev-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff786'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e"); }
 
-.contacto .row .seccion-titulo {
-  color: #171d51;
-}
-
-.contacto .descripcion {
-  color: #171d51;
-  font-family: "Itim", cursive;
-  font-size: 1.5rem;
-}
-
-.contacto button {
-  color: #171d51;
-  font-weight: bold;
-  background-color: transparent;
-  border: 2px solid #171d51;
-  padding: 1.25em 2em;
-  margin: 10px;
-  border-radius: 100px;
-  transition: all 0.2s ease-in-out;
-}
-
-.contacto button:hover {
-  background-color: #171d51;
-  color: #fff786;
-}
-
-.contacto button i {
-  color: #171d51;
-  font-size: 1.3rem;
-  transition: all 0.2s ease-in-out;
-}
-
-.contacto button:hover i {
-  color: #fff786;
-}
-
-/* Pie de pagina (footer) */
-
-footer {
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #62bcd8 0%, #7ed2e8 100%);
   min-height: 500px;
 }
 
-.footer-logo {
-  height: 80px;
-  width: 80px;
-  margin: 10px;
+.hero-imagen-desarrollador {
+  width: 220px;
+  height: 220px;
+  border: 10px solid var(--amarillo-pastel);
+  box-shadow: 10px 10px 0px var(--azul-profundo); /* Sombra estilo "pop art" */
+  transition: transform 0.3s ease;
 }
 
-.footer-texto {
-  font-size: 1.5rem;
-  padding: 20px;
-  margin-bottom: 30px;
-  font-family: "Quicksand", sans-serif;
+.hero-imagen-desarrollador:hover {
+  transform: translate(-5px, -5px);
+  box-shadow: 15px 15px 0px var(--azul-profundo);
 }
 
-.iconos-redes-sociales a {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2px;
-  margin: 10px;
-  border: 2px solid white;
-  border-radius: 50%;
-  transition: all 0.2s ease-in;
+/* Experiencia */
+.experiencia .columna {
+ 
+
+  padding: 30px 5px;
+
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
 
-.iconos-redes-sociales i {
-  color: white;
-  font-size: 1.5rem;
-  transition: all 0.2s ease-in;
+.experiencia .columna:hover {
+
+  transform: translateY(-10px);
 }
 
-.iconos-redes-sociales a:hover {
-  background-color: #fff786;
-  border: 2px solid #171d51;
+.experiencia i {
+  font-size: 3rem;
+  color: var(--azul-profundo);
+  background-color: var(--amarillo-pastel);
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
 }
 
-.iconos-redes-sociales a:hover i {
-  color: black;
+/* Contacto y Botones */
+.contacto .rectangulo {
+  background: linear-gradient(90deg, #fff786 0%, #fffaad 100%);
+  border: 4px solid var(--azul-profundo);
+  box-shadow: 8px 8px 0px var(--azul-profundo);
 }
 
-.derechos-de-autor {
-  font-size: 15px;
-  color: #323d73;
-  padding: 20px;
+.contacto button {
+  background-color: var(--azul-profundo);
+  color: var(--amarillo-pastel);
+  border: none;
+  box-shadow: 4px 4px 0px #000;
 }
 
-/* Adaptable (Responsivo) */
-
-@media screen and (max-width: 400px) {
-  .overlay p {
-    font-size: 18px;
-  }
-
-  .overlay i {
-    font-size: 40px;
-  }
+.contacto button:hover {
+  background-color: var(--blanco);
+  color: var(--azul-profundo);
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000;
 }
 
-@media screen and (max-width: 767px) {
-  .navbar-brand {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .testimonio-imagen {
-    height: 120px;
-    width: 120px;
-  }
-
-  .testimonio-texto {
-    font-size: 18px;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .hero-inferior-imagen {
-    max-width: 600px;
-  }
+footer {
+  background-color: var(--azul-profundo);
+  border-top: 8px solid var(--azul-medio);
 }

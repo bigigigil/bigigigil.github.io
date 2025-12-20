@@ -11,3 +11,19 @@ typewriter
   .pauseFor(200)
   .deleteChars(10)
   .start();
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll('.float-img');
+    
+    images.forEach(img => {
+        
+        const randomTop = Math.floor(Math.random() * 90);
+        const randomLeft = Math.floor(Math.random() * 90);
+        const randomDelay = Math.floor(Math.random() * 10);
+        
+        img.style.top = `${randomTop}%`;
+        img.style.left = `${randomLeft}%`;
+        img.style.animationDelay = `${randomDelay}s`;
+    });
+});

@@ -10,7 +10,7 @@
 .navbar {
   padding: 1.5rem;
   background-color: var(--azul-medio);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2); 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .nav-item a {
@@ -21,7 +21,7 @@
 
 .nav-item a:hover {
   color: var(--blanco);
-  text-shadow: 0 0 8px var(--amarillo-pastel); 
+  text-shadow: 0 0 8px var(--amarillo-pastel);
 }
 
 /* Estilos generales */
@@ -37,23 +37,46 @@ h1 {
   font-size: 3rem;
   font-family: "Bevan", serif;
   color: var(--azul-profundo);
-  text-shadow: 2px 2px 0px var(--amarillo-pastel); /* Detalle de sombra sólida */
+  text-shadow: 2px 2px 0px var(--amarillo-pastel);
+  /* Detalle de sombra sólida */
 }
 
-h3,h5 {
+h3,
+h5 {
 
   font-family: "Bevan", serif;
 }
 
+p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  max-width: 800px;
+  text-align: justify;
+}
+
 .seccion-oscura {
   color: var(--blanco);
-  background: linear-gradient(180deg, #171d51 0%, #1c2563 100%); /* Degradado sutil */
+  background: linear-gradient(180deg, #171d51 0%, #1c2563 100%);
+}
+
+.experiencia.seccion-oscura p {
+  text-align: center;
+}
+.desc-corta{
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.desc-corta p {
+  text-align: center;
 }
 
 .seccion-clara {
   color: black;
   background-color: var(--azul-claro);
-  background-image: radial-gradient(circle at 10% 20%, rgba(255,247,134,0.1) 0%, transparent 40%); /* Mancha de luz pastel */
+  background-image: radial-gradient(circle at 10% 20%, rgba(255, 247, 134, 0.1) 0%, transparent 40%);
 }
 
 .seccion-titulo {
@@ -80,12 +103,17 @@ h3,h5 {
 .carousel-control-next:hover .carousel-control-next-icon {
   background-color: var(--amarillo-pastel);
   border-color: var(--azul-profundo);
-  filter: invert(0); 
+  filter: invert(0);
   transform: scale(1.1);
 }
 
-.carousel-control-next-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff786'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e"); }
-.carousel-control-prev-icon { background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff786'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e"); }
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff786'%3e%3cpath d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23fff786'%3e%3cpath d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/%3e%3c/svg%3e");
+}
 
 /* Hero Section */
 .hero {
@@ -97,7 +125,7 @@ h3,h5 {
   width: 220px;
   height: 220px;
   border: 10px solid var(--amarillo-pastel);
-  box-shadow: 10px 10px 0px var(--azul-profundo); 
+  box-shadow: 10px 10px 0px var(--azul-profundo);
   transition: transform 0.3s ease;
 }
 
@@ -108,7 +136,7 @@ h3,h5 {
 
 /* Experiencia */
 .experiencia .columna {
- 
+
 
   padding: 30px 5px;
 
@@ -127,7 +155,7 @@ h3,h5 {
   background-color: var(--amarillo-pastel);
   padding: 15px;
   border-radius: 15px;
-  box-shadow: 4px 4px 0px rgba(0,0,0,0.2);
+  box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.2);
 }
 
 /* Contacto y Botones */
@@ -153,73 +181,101 @@ h3,h5 {
 
 
 .proyecto-card {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
-    cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
 }
 
 
 .proyecto-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(23, 29, 81, 0.8); 
-    color: #fff786; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(23, 29, 81, 0.8);
+  color: #fff786;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 .proyecto-card:hover .proyecto-overlay {
-    opacity: 1;
+  opacity: 1;
 }
 
 .proyecto-card img {
-    transition: transform 0.5s ease;
+  transition: transform 0.5s ease;
 }
 
 .proyecto-card:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .card {
-    background-color: transparent !important;
-    border: none !important;
-    box-shadow: none !important; 
+  background-color: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
 }
 
 .card img {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
+
 footer {
   background-color: var(--azul-profundo);
   border-top: 8px solid var(--azul-medio);
 }
 
 .iconos-redes-sociales a {
-    transition: transform 0.3s ease, color 0.3s ease;
-    color: var(--amarillo-pastel);
-    text-decoration: none;
+  transition: transform 0.3s ease, color 0.3s ease;
+  color: var(--amarillo-pastel);
+  text-decoration: none;
 }
 
 .iconos-redes-sociales a:hover {
-    transform: translateY(-5px); 
-    color: #0d6efd; 
+  transform: translateY(-5px);
+  color: var(--azul-claro);
 }
 
 /*monito 3d*/
 
 
 
-    model-viewer{
-         width:400px;
-         height:400px;
-    }
+model-viewer {
+  width: 400px;
+  height: 400px;
+}
 
-    
+#idioma {
+  position: absolute;
+  right: 20px;
+  background-color: var(--amarillo-pastel);
+  color: var(--azul-profundo);
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-family: "Bevan", serif;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: left;
+  padding-right: 30px; 
+}
+
+#idioma:hover {
+  cursor: pointer;
+  color: var(--azul-medio);
+  box-shadow: 0 0 8px var(--amarillo-pastel);
+}
+
+#idioma option {
+  position: absolute;
+  right: 20px;
+  background-color: var(--azul-profundo);
+  color: var(--amarillo-pastel);
+  padding: 5px 10px;
+  font-family: "Bevan", serif;
+
+}
